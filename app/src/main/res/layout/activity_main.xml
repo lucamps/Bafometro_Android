@@ -21,7 +21,8 @@
         android:layout_toEndOf="@id/textViewPeso"
         android:layout_marginStart="@dimen/editTextMarginStart"
         android:ems="8"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal"
+        style="@style/Widget.AppCompat.EditText" />
 
     <TextView
         android:id="@+id/textViewSexo"
@@ -40,7 +41,8 @@
         android:layout_toEndOf="@id/textViewSexo"
         android:layout_marginStart="@dimen/editTextMarginStart"
         android:ems="8"
-        android:inputType="text" />
+        android:inputType="text"
+        style="@style/Widget.AppCompat.EditText" />
 
     <TextView
         android:id="@+id/textViewCopos"
@@ -59,7 +61,8 @@
         android:layout_toEndOf="@id/textViewCopos"
         android:layout_marginStart="@dimen/editTextMarginStart"
         android:ems="8"
-        android:inputType="number" />
+        android:inputType="number"
+        style="@style/Widget.AppCompat.EditText" />
 
     <TextView
         android:id="@+id/textViewJejum"
@@ -78,7 +81,8 @@
         android:layout_toEndOf="@id/textViewJejum"
         android:layout_marginStart="@dimen/editTextMarginStart"
         android:ems="8"
-        android:inputType="text" />
+        android:inputType="text"
+        style="@style/Widget.AppCompat.EditText" />
 
     <Button
         android:id="@+id/buttonEnviarDados"
