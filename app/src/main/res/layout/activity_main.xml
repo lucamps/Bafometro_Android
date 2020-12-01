@@ -87,6 +87,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/textViewJejum"
         android:layout_marginTop="@dimen/textViewMarginTop"
+        android:textAllCaps="false"
         android:text="Enviar Dados" />
 
 
