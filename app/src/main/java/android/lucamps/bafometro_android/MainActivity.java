@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import pacoteB.OutsideActivity;
+
 public class MainActivity extends AppCompatActivity {
     private final int REQUEST_CODE = 100;
 
@@ -37,7 +39,12 @@ public class MainActivity extends AppCompatActivity {
                 jejum = editTextJejum.getText().toString();
                 sexo = editTextSexo.getText().toString();
 
-                Intent it = new Intent(getBaseContext(), SecondActivity.class);
+                //Primeira abordagem
+                //Intent it = new Intent(getBaseContext(), SecondActivity.class);
+
+                //Segunda abordagem
+                Intent it = new Intent(getBaseContext(), OutsideActivity.class);
+
                 it.putExtra("peso", peso);
                 it.putExtra("sexo", sexo);
                 it.putExtra("copos", copos);
