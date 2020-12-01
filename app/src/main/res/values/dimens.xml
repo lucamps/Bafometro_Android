@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="initialMarginTop">140dp</dimen>
+    <dimen name="initialMarginStart">120dp</dimen>
+    <dimen name="textViewMarginTop">30dp</dimen>
+    <dimen name="editTextMarginStart">10dp</dimen>
+</resources>

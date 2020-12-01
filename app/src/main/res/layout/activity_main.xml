@@ -1,18 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textViewPeso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="@dimen/initialMarginStart"
+        android:layout_marginTop="@dimen/initialMarginTop"
+        android:text="Peso:" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/editTextPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewPeso"
+        android:layout_toEndOf="@id/textViewPeso"
+        android:layout_marginStart="@dimen/editTextMarginStart"
+        android:ems="8"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPeso"
+        android:layout_alignEnd="@id/textViewPeso"
+        android:layout_marginTop="@dimen/textViewMarginTop"
+        android:text="Sexo (m/f):" />
+
+    <EditText
+        android:id="@+id/editTextSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewSexo"
+        android:layout_toEndOf="@id/textViewSexo"
+        android:layout_marginStart="@dimen/editTextMarginStart"
+        android:ems="8"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textViewCopos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSexo"
+        android:layout_alignEnd="@id/textViewSexo"
+        android:layout_marginTop="@dimen/textViewMarginTop"
+        android:text="N° Copos:" />
+
+    <EditText
+        android:id="@+id/editTextCopos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewCopos"
+        android:layout_toEndOf="@id/textViewCopos"
+        android:layout_marginStart="@dimen/editTextMarginStart"
+        android:ems="8"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewJejum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCopos"
+        android:layout_alignEnd="@id/textViewCopos"
+        android:layout_marginTop="@dimen/textViewMarginTop"
+        android:text="Está de jejum? (s/n):" />
+
+    <EditText
+        android:id="@+id/editTextJejum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewJejum"
+        android:layout_toEndOf="@id/textViewJejum"
+        android:layout_marginStart="@dimen/editTextMarginStart"
+        android:ems="8"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonEnviarDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewJejum"
+        android:layout_marginTop="@dimen/textViewMarginTop"
+        android:text="Enviar Dados" />
+
+
+
+
+</RelativeLayout>
